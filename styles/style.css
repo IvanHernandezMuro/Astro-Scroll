@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap";
+:root {
+	--main-color: #10e8f7;
+	--main-color-dark: #fa5514;
+	--ray-color: #1161f5;
+	--spark-color: #1f35f5;
+	--back-color: #2e05e4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: var(--back-color);
+}
+
+main {
+	transition: 0.8s;
+	background: #06c0f8;
+}
+main section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s;
+}
+main section:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 218px;
+	background: linear-gradient(to top, #07e2d7, transparent);
+	z-index: 1;
+}
+main section img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	pointer-events: none;
+}
+main section .pokeball {
+	height: 60vh;
+	top: 63%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+main section #text {
+	position: relative;
+	color: #fff;
+	font-size: 10vw;
+}
+main .sec {
+	position: relative;
+	min-height: 500px;
+	padding: 100px;
+}
+main .sec .content {
+	position: relative;
+	z-index: 2;
+}
+main .sec .content h2 {
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	color: #0754e2;
+}
+main .sec .content p {
+	font-size: 1.2em;
+	color: #f5f7f8;
+}
